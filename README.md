@@ -1,2 +1,2 @@
-# Katarzyna_Por-ba_Warcaby
+# Katarzyna_Poreba_Warcaby
 Projekt z przedmiotu Języki Symboliczne.
