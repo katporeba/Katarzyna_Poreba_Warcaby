@@ -24,19 +24,34 @@ def firstTest():
         #wybranie białego pionka oraz pola na które chcemy go przenieść
         tmpPiece1 = pieces[2][2]
         tmpDestination1 = pieces[3][3]
+        #zamienianie ich miejscem
         movePieces.moveNormalPiece(win, tmpPiece1, 2, 2)
         movePieces.moveNormalPiece(win, tmpDestination1, 3, 3)
+
 
         #wybranie czarnego pionka oraz pola na które chcemy go przenieść
         tmpPiece2 = pieces[5][7]
         tmpDestination2 = pieces[4][6]
-
         #zamienianie ich miejscem
         movePieces.moveNormalPiece(win, tmpPiece2, 5, 7)
         movePieces.moveNormalPiece(win, tmpDestination2, 4, 6)
 
+        #wybranie białego pionka oraz pola na które chcemy go przenieść
+        tmpPiece3 = pieces[2][0]
+        tmpDestination3 = pieces[3][1]
+        #zamienianie ich miejscem
+        movePieces.moveNormalPiece(win, tmpPiece3, 2, 0)
+        movePieces.moveNormalPiece(win, tmpDestination3, 3, 1)
+
+        #wybranie czarnego pionka oraz pola na które chcemy go przenieść
+        tmpPiece4 = pieces[5][1]
+        tmpDestination4 = pieces[4][0]
+        #zamienianie ich miejscem
+        movePieces.moveNormalPiece(win, tmpPiece4, 5, 1)
+        movePieces.moveNormalPiece(win, tmpDestination4, 4, 0)
+
         #sprawdzenie czy pionki zamieniły swoje miejsce
-        if(pieces[2][2] == tmpDestination1 and pieces[3][3] == tmpPiece1 and pieces[5][7] == tmpDestination2 and pieces[4][6] == tmpPiece2):
+        if pieces[2][2] == tmpDestination1 and pieces[3][3] == tmpPiece1 and pieces[5][7] == tmpDestination2 and pieces[4][6] == tmpPiece2 and  pieces[2][0] == tmpDestination3 and pieces[3][1] == tmpPiece3 and pieces[5][1] == tmpDestination4 and pieces[4][0] == tmpPiece4:
             print("Correct values - first test\n")
         else:
             raise WrongMove
